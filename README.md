@@ -11,6 +11,7 @@ This code is changed from the static code of our group, where we consisted of a 
 First of all, in terms of The setting of basic circles, I initially wanted to create them by teaching Apollonian Gasket in The Coding Train. I originally wanted to create countless tangential circles to create a filling effect, but our theme is a ring state. So we go back to our roots using nesting dolls. Inspired by Wassily Kandinsky's hand-painted works.
 
 These artistic inspirations have influenced my choice of colors. The collision of colors and the flashing color interval in the middle circle are all selected to bring color impact as much as possible. At the same time, the colored lines can also be filled by the user to fill some real space.
+
 ![Inspiration](WassilyKandinsky.jpg)
 
 [WassilyKandinsky](https://www.wassilykandinsky.net/work-370.php)
@@ -24,11 +25,13 @@ These artistic inspirations have influenced my choice of colors. The collision o
 
 First of all some basic use, my most basic part about the keyboard is the beginning of the reference to the week 7 control panel content, such as pressing the button position control and part of the image appear and zoom. Most of my derivation started from the classroom part, but in addition, I also found some examples about controlling the keys to do the step-by-step emergence test.
 
+
 - Multiple Particle Systems
   
 [Multiple Particle Systems](https://p5js.org/examples/simulate-multiple-particle-systems.html)
 
 From Daniel Shiffman's code tech reference, this section is sort of an added element from the example, using active particle patterns, such that the particle images are dispersed in clusters with a tendency to taper off, and are a particle selector group appearing via keystrokes. Right-clicking will bring up the group of dispersing particles on the screen, and this element can also echo the polka dots in our background.
+
 
 - Conditional Shapes
   
@@ -39,16 +42,16 @@ Inspirationcontributed by Prof WM Harris, it's about following a mouse through a
 
  
 
-### Examples of flow
-- Gabbi Kitchener 
+### More Examples 
+- Mouse Signals 
 
-![Gabbi Kitchener ](readmeImages\Gabbi_Kitchener.jpg)
+![Mouse Signals](MouseSignals.jpg)
+[Mouse Signals](https://p5js.org/examples/input-mouse-signals.html)
 
-- Tyler Hobbs
+- Pacita Abad
 
-![Unfenced Existence](readmeImages\Unfenced_Existence.jpg)
+![Pacita Abad](PacitaAbad.jpg)
+[Pacita Abad](https://www.sfmoma.org/read/pacita-abad-a-living-tapestry-of-places/)
 
-![Detail from Fragments of Thought D](readmeImages\Detail_from_Fragments_of_Thought_D.jpg)
-  
 
 ## Technical Explanation
