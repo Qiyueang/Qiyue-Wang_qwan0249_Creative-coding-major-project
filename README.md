@@ -78,3 +78,21 @@ User interaction using the keyboard: Arrow keys move all circles. The A "key inc
 User interaction Using mouse: Left click and drag to draw lines. Right-click at the cursor position to create a new particle system.
 
 Add components to the above elements, creating classes separately.
+
+## Example Code Blocks 
+backtick:
+`print(Multiple Particle Systems)`
+
+```
+function mousePressed() {
+  this.p = new ParticleSystem(createVector(mouseX, mouseY));
+  systems.push(p);
+}
+
+// A simple Particle class
+let Particle = function(position) {
+  this.acceleration = createVector(0, 0.05);
+  this.velocity = createVector(random(-1, 1), random(-1, 0));
+  this.position = position.copy();
+  this.lifespan = 255.0;
+};
