@@ -8,21 +8,35 @@ My code is mainly through keyboard and mouse to interact, control some keys inpu
 This code is changed from the static code of our group, where we consisted of a white dot in the background and a circle with overlapping loops, which gave us a static pattern element. In my code, I kept the white dots, but increased the divergence of the dots, and added changes to the zoom and position control of the circles, as well as a controllable brush.
 
 ## Inspiration
-First, the animation was largely continued from the group code, which I took inspiration from the video of Yayoi Kusama's Infinity Mirrored Room. The exhibition was set up in a dark room, where different colors of light would stand out in the dark environment, and reflected through multiple mirrors, making it look like the room was covered in colored starlight.
+First of all, in terms of The setting of basic circles, I initially wanted to create them by teaching Apollonian Gasket in The Coding Train. I originally wanted to create countless tangential circles to create a filling effect, but our theme is a ring state. So we go back to our roots using nesting dolls. Inspired by Wassily Kandinsky's hand-painted works.
 
-I therefore decided to remove the white dots on the background in the group code and replace them with colored dots. Additionally, to increase the contrast between the background color of the image and the circle, I changed the background color to a dark purple, which looks relatively dark but not overly rigid like black. Meanwhile, this color can bring more visual appeal and create a feeling of mystery.
+These artistic inspirations have influenced my choice of colors. The collision of colors and the flashing color interval in the middle circle are all selected to bring color impact as much as possible. At the same time, the colored lines can also be filled by the user to fill some real space.
+![Inspiration](WassilyKandinsky.jpg)
 
-### Infinity Mirrored Room
-- Screentshot from YouTube video
+[WassilyKandinsky](https://www.wassilykandinsky.net/work-370.php)
 
-![Infinity Mirrored Room](readmeImages\Infinity_Mirrored_Room.jpg)
+ [Class](https://www.youtube.com/watch?v=6UlGLB_jiCs)
+
+### Functions code using
+- Keyboard Function
+
+[Keyboard control](https://processing.org/examples/keyboardfunctions.html)
+
+First of all some basic use, my most basic part about the keyboard is the beginning of the reference to the week 7 control panel content, such as pressing the button position control and part of the image appear and zoom. Most of my derivation started from the classroom part, but in addition, I also found some examples about controlling the keys to do the step-by-step emergence test.
+
+- Multiple Particle Systems
   
-[Infinity Mirrored Room Video](https://www.youtube.com/watch?app=desktop&v=vebDk7xQmCw)
+[Multiple Particle Systems](https://p5js.org/examples/simulate-multiple-particle-systems.html)
+
+From Daniel Shiffman's code tech reference, this section is sort of an added element from the example, using active particle patterns, such that the particle images are dispersed in clusters with a tendency to taper off, and are a particle selector group appearing via keystrokes. Right-clicking will bring up the group of dispersing particles on the screen, and this element can also echo the polka dots in our background.
+
+- Conditional Shapes
+  
+[Conditional Shapes](https://p5js.org/examples/control-conditional-shapes.html)
+
+Inspirationcontributed by Prof WM Harris, it's about following a mouse through a fixed shape to make a stroke. He used squares, and circles to create the trajectory. I added a brush function to allow the user to draw lines on their own. And the colored lines would be more in line with my theme.
 
 
-But just the above changes are not enough to reflect the effect I want, I think these elements can create a sense of flow if they are moved. I searched for some artwork on the web using flow as a keyword to find a suitable source of inspiration. Some of the drawings created by Gabbi Kitchener gave me great ideas, and I like the long lines drawn in white that show the flow well. I also feel the same way about the artwork created by Tyler Hobbs, who specializes in generative arts using long curves of different colors to create a perfect flow.
-
-I thus recalled the trace an ellipse we made in the week 10 tutorial, where we made a dot that moves in an elliptical orbit, where the dot leaves a trace of its movement as it moves. I then decided to create something similar in my code, where the dots would follow the noise and leave a trace of their movement, which I thought would be a good representation of the flow I expected.
  
 
 ### Examples of flow
@@ -38,18 +52,3 @@ I thus recalled the trace an ellipse we made in the week 10 tutorial, where we m
   
 
 ## Technical Explanation
-My personal code is created based on the group code.
-
-I first deleted the white dots on the background and changed the background color.
-
-Then, I created a new variable noiseOffset to control the offset of the noise, and created a coloredDots array to save the colored dots.
-
-I also created a new class called ColoredDot, which contains the position, radius and random color of the colored dots. By using the update method to update the position of the dots which changes with the noice.
-
-In both the ColoredCircle and ColoredDot classes, I used the map function to map the noise values from the （0, 1） range to （-2, 2）to make the magnitude of the movement more apparent.
-
-After that, I created new functions updateCirclesPosition and updateDotsPosition, they offset circles and dots by gradually increasing the noise offset. These two functions are called in the draw function.
-
-In the drawCircles function, a for loop is also added to randomly get 100 random x and y positions for colored dots.
-
-In the drawBackground function, I add an alpha value to the background so that all elements can leave trails as they move.
