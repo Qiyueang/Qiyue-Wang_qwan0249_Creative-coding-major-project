@@ -18,7 +18,7 @@ These artistic inspirations have influenced my choice of colors. The collision o
 
  [Class](https://www.youtube.com/watch?v=6UlGLB_jiCs)
 
-### Functions code using
+## Functions code using
 - Keyboard Function
 
 [Keyboard control](https://processing.org/examples/keyboardfunctions.html)
@@ -42,16 +42,39 @@ Inspirationcontributed by Prof WM Harris, it's about following a mouse through a
 
  
 
-### More Examples 
+## More Examples 
 - Mouse Signals 
 
 ![Mouse Signals](MouseSignals.jpg)
+
 [Mouse Signals](https://p5js.org/examples/input-mouse-signals.html)
+
 
 - Pacita Abad
 
 ![Pacita Abad](PacitaAbad.jpg)
+
 [Pacita Abad](https://www.sfmoma.org/read/pacita-abad-a-living-tapestry-of-places/)
 
 
 ## Technical Explanation
+
+- 'whiteDots' is an array that stores the locations of white dots scattered in the background.
+- These points are randomly drawn when the canvas is created.
+
+- A 'ColoredCircle' class creates circles with several layers of color, each circle changing color over time. You can move these circles using the arrow keys and resize them using the 'A' and 'B' keys. When you press the space bar, the center circle returns to its original position and color.
+
+- Hold down the left mouse button and drag to draw lines.
+
+Particles are small dots that gradually disappear over time. I manage a bunch of particles using the "particles system" class. The user can create a particle system in the mouse position by right-clicking.
+
+Technology use
+To start the sketch, 'setup()' creates a 600x600 pixel canvas and sets the background color. Scatter 200 random white dots across the canvas. I'm creating seven colored circles at specific locations. Each circle has three layers of color.
+
+'draw()' repeats, updating the canvas every second and redrawing the background and white dots. Set updates and draw each colored circle, making sure the inner circle changes color smoothly. Set updates and draws each particle system, adding new particles and deleting old ones.
+
+User interaction using the keyboard: Arrow keys move all circles. The A "key increases the size of all circles. The 'B' key reduces the size of all circles. The space bar resets the circle to its original state.
+
+User interaction Using mouse: Left click and drag to draw lines. Right-click at the cursor position to create a new particle system.
+
+Add components to the above elements, creating classes separately.
