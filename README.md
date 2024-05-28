@@ -3,9 +3,9 @@
 
 ## Interactions & Changes
 
-In my personal code, I chose to use **Perlin Noise** to drive my personal code, which does not require any mouse or keyboard interaction. 
+My code is mainly through keyboard and mouse to interact, control some keys input some dynamic.
 
-This code is changed from the group code, where the positions of the circles in the image are animated and they will move randomly following the noise. Also, I removed the white dots in the image on the background and replaced them with colored dots that also move randomly with the noise.
+This code is changed from the static code of our group, where we consisted of a white dot in the background and a circle with overlapping loops, which gave us a static pattern element. In my code, I kept the white dots, but increased the divergence of the dots, and added changes to the zoom and position control of the circles, as well as a controllable brush.
 
 ## Inspiration
 First, the animation was largely continued from the group code, which I took inspiration from the video of Yayoi Kusama's Infinity Mirrored Room. The exhibition was set up in a dark room, where different colors of light would stand out in the dark environment, and reflected through multiple mirrors, making it look like the room was covered in colored starlight.
